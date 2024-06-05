@@ -53,5 +53,29 @@ If you need to remove any installed components or clean up your environment:
 ### Why:
 - Cleanup ensures that any unwanted packages or configurations are removed from your system.
 
-## Conclusion
-By following these steps, you've set up a robust environment for deep learning with NVIDIA GPU support. You can now start developing and running deep learning models efficiently. Remember to refer back to this guide whenever you need to reinstall or update any components of your environment. Happy deep learning!
+## Compatibility Table
+
+| Nvidia Driver | CUDA Version | cuDNN Version | TensorFlow Version |
+|---------------|--------------|---------------|--------------------|
+| 551.76        | 12.4         | 8.9           | 2.13               |
+| 550.54.14     | 12.4         | 8.8           | 2.13               |
+| 545.54.03     | 12.2         | 8.7           | 2.12               |
+| 540.41.03     | 12.1         | 8.7           | 2.12               |
+| 535.54.03     | 12.1         | 8.6           | 2.11               |
+| 530.41.03     | 12.0         | 8.6           | 2.11               |
+| 525.105.17    | 12.0         | 8.6           | 2.11               |
+| 515.105.01    | 11.7         | 8.5           | 2.10               |
+| 515.65.01     | 11.6         | 8.4           | 2.9                |
+| 510.108.03    | 11.6         | 8.4           | 2.9                |
+| 510.47.03     | 11.5         | 8.3           | 2.8                |
+| 505.29.05     | 11.5         | 8.3           | 2.8                |
+| 495.29.05     | 11.4         | 8.3           | 2.8                |
+| 495.29.05     | 11.4         | 8.2           | 2.7                |
+| 485.29.05     | 11.4         | 8.2           | 2.7                |
+| 470.129.06    | 11.4         | 8.2           | 2.7                |
+| 470.82.01     | 11.3         | 8.2           | 2.6                |
+| 465.19.01     | 11.3         | 8.2           | 2.5                |
+| 465.19.01     | 11.2         | 8.1           | 2.4                |
+| 460.73.01     | 11.2         | 8.1           | 2.4                |
+| 455.23.04     | 11.2         | 8.1           | 2.4                |
+
