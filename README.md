@@ -8,47 +8,51 @@ Before you begin, ensure you have the following:
 - A Ubuntu-based Linux distribution (e.g., Ubuntu 20.04 LTS).
 
 ## Step 1: Installing NVIDIA Drivers
-1. Open a terminal window.
-2. Create a new shell script file named `install_nvidia_driver.sh` and copy the provided script into it.
-3. Make the script executable by running `chmod +x install_nvidia_driver.sh`.
-4. Execute the script by running `./install_nvidia_driver.sh <desired_driver_version>`, replacing `<desired_driver_version>` with the version of the NVIDIA driver you want to install.
+1. Download the shell script file named `install_nvidia_driver.sh` .
+2. Make the script executable by running `chmod +x install_nvidia_driver.sh`.
+3. Execute the script by running `./install_nvidia_driver.sh <desired_driver_version>`, replacing `<desired_driver_version>` with the version of the NVIDIA driver you want to install.
+4. At the end of the script, the prompt ask you to confirm whether to reboot. Only proceed with the reboot if the final test line in the script fails to produce the expected output. 
 
 ### Why:
 - NVIDIA drivers are essential for GPU utilization and communication with the CUDA toolkit.
 
 ## Step 2: Installing CUDA Toolkit
-1. Open a terminal window.
-2. Create a new shell script file named `install_cuda.sh` and copy the provided script into it.
-3. Make the script executable by running `chmod +x install_cuda.sh`.
-4. Execute the script by running `./install_cuda.sh <desired_cuda_version>`, replacing `<desired_cuda_version>` with the version of the CUDA toolkit you want to install.
+1. Download the shell script file named `install_cuda.sh` .
+2. Make the script executable by running `chmod +x install_cuda.sh`.
+3. Execute the script by running `./install_cuda.sh <desired_cuda_version>`, replacing `<desired_cuda_version>` with the version of the CUDA toolkit you want to install (without version - download basic version)
+4. At the end of the script, the prompt ask you to confirm whether to reboot. Only proceed with the reboot if the final test line in the script fails to produce the expected output. 
+
 
 ### Why:
 - The CUDA toolkit provides libraries and tools necessary for GPU-accelerated computations.
 
 ## Step 3: Installing cuDNN Library
-1. Open a terminal window.
-2. Create a new shell script file named `install_cuDNN.sh` and copy the provided script into it.
-3. Make the script executable by running `chmod +x install_cuDNN.sh`.
-4. Execute the script by running `./install_cuDNN.sh`.
+1. Download the shell script file named `install_cuDNN.sh` .
+2. Make the script executable by running `chmod +x install_cuDNN.sh`.
+3. Execute the script by running `./install_cuDNN.sh`.
+4. Choose you CUDA series 11/12 (to match the installation)
+5. At the end of the script, the prompt ask you to confirm whether to reboot. Only proceed with the reboot if the final test line in the script fails to produce the expected output. 
+
 
 ### Why:
 - cuDNN (CUDA Deep Neural Network library) provides GPU-accelerated primitives for deep neural networks.
 
 ## Step 4: Installing TensorFlow
-1. Open a terminal window.
-2. Create a new shell script file named `install_tf.sh` and copy the provided script into it.
-3. Make the script executable by running `chmod +x install_tf.sh`.
-4. Execute the script by running `./install_tf.sh`.
+1. Download the shell script file named `install_tf.sh` and copy the provided script into it.
+2. Make the script executable by running `chmod +x install_tf.sh`.
+3. Execute the script by running `./install_tf.sh <desired_tensorflow_version>`, replacing `<desired_tensorflow_version>` with the version of the TensorFlow you want to install (without version - download 2.10.* version)
+4. At the end of the script, the prompt ask you to confirm whether to reboot. Only proceed with the reboot if the final test line in the script fails to produce the expected output. 
+
 
 ### Why:
 - TensorFlow is a popular deep learning framework that can leverage GPU acceleration for training and inference.
 
-## Step 5: Cleanup (Optional)
-If you need to remove any installed components or clean up your environment:
-1. Open a terminal window.
-2. Create a new shell script file named `cleanup.sh` and copy the provided script into it.
-3. Make the script executable by running `chmod +x cleanup.sh`.
-4. Execute the script by running `./cleanup.sh`.
+## Additional: Cleanup 
+1. Download the shell script file named `cleanup.sh`.
+2. Make the script executable by running `chmod +x cleanup.sh`.
+3. Execute the script by running `./cleanup.sh`.
+4. At the end of the script, the prompt ask you to confirm whether to reboot. Only proceed with the reboot if the final test line in the script fails to produce the expected output. 
+
 
 ### Why:
 - Cleanup ensures that any unwanted packages or configurations are removed from your system.
